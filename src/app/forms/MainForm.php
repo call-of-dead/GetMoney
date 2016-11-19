@@ -12,9 +12,9 @@ use php\gui\event\UXMouseEvent;
 
 class MainForm extends AbstractForm
 {
-    $ids;
+    $ids=array(0,1,2,3,4,5,6,7,8);
     $ALL;
-    $Rub;
+    $Rub=array('USD','Eur','CHF','GBP', 'Гривна','JPY','тенге','лиры (TL)','Вона');
     function erase_I($arr,$i){
         $res=array();
         for ($j=0;$j<count($arr);$j++){
@@ -102,18 +102,20 @@ class MainForm extends AbstractForm
                 }
                 $strdate=substr($all,$tmp);
                 //echo $strdate."\n";
-                $date=substr($strdate,strlen($del),8);
+                $date=substr($strdate,strlen($del),20);
+                $date=substr($date,0, strpos($date, '<'));
                 $date=explode(".",$date);
                 $date=$date[2].$date[1].$date[0];
                 if (($date>=$endDateStart)&&($date<=$endDateEnd)){
                     $ind=$tmp+20;
-                    continue;
+                    //continue;
                 }
                 array_push($datas,$date);
                 $del='<span class="quote__sgn"></span>';
                 $tmp=strpos($all,$del,$ind);
                 $strdate=substr($all,$tmp);;
-                $value=substr($strdate,strlen($del),7);
+                $value=substr($strdate,strlen($del),30);
+                $value=substr($value,0, strpos($value, '<'));
                 $value=str_replace(',','.',$value);
                 array_push($values,$value);
                $ind=$tmp+10;
@@ -150,9 +152,7 @@ class MainForm extends AbstractForm
     function doConstruct(UXEvent $event = null)
     {  
         $isset=true;
-        $ids=array(0,1,2,3,4,5,6,7,8);
-        $this->Rub=array('USD','Eur','CHF','GBP', 'Гривна','JPY','тенге','лиры','Вона');
-        $this->ids=$ids;
+        $ids=$this->ids;
         $this->ALL=$ids;
         try{
             $endDateEnd=$this->database->query('select * from EndDate;');

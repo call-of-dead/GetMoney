@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project author="diman-pro" authorOS="Linux" createdAt="1479448961769" ideName="DevelNext" ideVersion="16 rc-1" ideVersionHash="2016092012" name="GetMoney" template="ide\project\templates\DefaultGuiProjectTemplate" updatedAt="1479542436675">
+<project author="diman-pro" authorOS="Linux" createdAt="1479448961769" ideName="DevelNext" ideVersion="16 rc-1" ideVersionHash="2016092012" name="GetMoney" template="ide\project\templates\DefaultGuiProjectTemplate" updatedAt="1479565712687">
   <openedFiles>
   <file src="~project"/>
     <file src="src/.scripts/MainModule"/>
