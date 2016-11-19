@@ -12,9 +12,12 @@ use php\gui\event\UXMouseEvent;
 
 class MainForm extends AbstractForm
 {
-    $ids=array(0,1,2,3,4,5,6,7,8);
+    $ids=array(0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18);
     $ALL;
-    $Rub=array('USD','Eur','CHF','GBP', 'Гривна','JPY','тенге','лиры (TL)','Вона');
+    $Rub=array('USD','Eur','CHF','GBP', 'Гривна','JPY',
+                'тенге','лиры (TL)','Южнокарейская Вона', 'Юань', 'индийская рупия',
+                'Нефть','Золото', 'Аллюминий', 'Платина', 'Серебро',
+                'Акция Газпрома', 'Автоваз','Сбербанк');
     function erase_I($arr,$i){
         $res=array();
         for ($j=0;$j<count($arr);$j++){
@@ -34,7 +37,17 @@ class MainForm extends AbstractForm
             5=>'https://news.yandex.ru/quotes/region/25.html',
             6=>'https://news.yandex.ru/quotes/region/10009.html',
             7=>'https://news.yandex.ru/quotes/region/10011.html',
-            8=>'https://news.yandex.ru/quotes/region/10019.html'
+            8=>'https://news.yandex.ru/quotes/region/10019.html',
+            9=>'https://news.yandex.ru/quotes/region/10018.html',
+            10=>'https://news.yandex.ru/quotes/region/10020.html',
+            11=>'https://news.yandex.ru/quotes/1006.html',
+            12=>'https://news.yandex.ru/quotes/10.html',
+            13=>'https://news.yandex.ru/quotes/1500.html',
+            14=>'https://news.yandex.ru/quotes/1505.html',
+            15=>'https://news.yandex.ru/quotes/1506.html',
+            16=>'https://news.yandex.ru/quotes/29.html',
+            17=>'https://news.yandex.ru/quotes/64.html',
+            18=>'https://news.yandex.ru/quotes/60.html'
         );
         $X=600;
         $Y=88;
