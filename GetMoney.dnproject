@@ -4,6 +4,7 @@
   <file src="~project"/>
     <file src="src/.scripts/MainModule"/>
     <file selected="1" src="src/.forms/MainForm.fxml"/>
+    <file src="src/.forms/Load.fxml"/>
   </openedFiles>
   <files>
   <file inRootDir="1" src="src/app/prototypes"/>
@@ -116,6 +117,16 @@
     <file inRootDir="1" src="build"/>
     <file inRootDir="1" src="~project"/>
     <file inRootDir="1" src="src_generated"/>
+    <file inRootDir="1" src="src/.game/sprites/test.sprite"/>
+    <file inRootDir="1" src="src/.game/sprites/test.png"/>
+    <file inRootDir="1" src="src/.forms/Load.fxml">
+      <links>
+        <link src="src/app/forms/Load.php"/>
+        <link src="src/.forms/Load.conf"/>
+      </links>
+    </file>
+    <file inRootDir="1" src="src/app/forms/Load.php"/>
+    <file inRootDir="1" src="src/.forms/Load.conf"/>
   </files>
   <behaviours>
   <behaviour class="ide\project\behaviours\BundleProjectBehaviour"/>

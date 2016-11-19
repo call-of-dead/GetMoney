@@ -1,6 +1,7 @@
 <?php
 namespace app\forms;
 
+use app\forms\Load;
 use app\forms\MainForm;
 use php\gui\UXCheckbox;
 use php\sql\SqlStatement;
@@ -121,7 +122,7 @@ class MainForm extends AbstractForm
                 $date=$date[2].$date[1].$date[0];
                 if (($date>=$endDateStart)&&($date<=$endDateEnd)){
                     $ind=$tmp+20;
-                    //continue;
+                    continue;
                 }
                 array_push($datas,$date);
                 $del='<span class="quote__sgn"></span>';
@@ -189,7 +190,7 @@ class MainForm extends AbstractForm
             }
         }
 
-
+        $this->loadForm(app\forms\Load);
         $this->UpdateMoney();
         $this->UpdateKurse();
     }
