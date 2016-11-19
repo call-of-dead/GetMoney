@@ -1,6 +1,7 @@
 <?php
 namespace app\forms;
 
+use php\lang\Thread;
 use app\forms\Load;
 use app\forms\MainForm;
 use php\gui\UXCheckbox;
@@ -189,10 +190,9 @@ class MainForm extends AbstractForm
                 )->update();
             }
         }
-
-        $this->loadForm(app\forms\Load);
         $this->UpdateMoney();
         $this->UpdateKurse();
+        
     }
     function g($matrix){
         $a = $matrix;
@@ -321,6 +321,16 @@ class MainForm extends AbstractForm
         }
         
     }
-    
-
+}    
+class Thre extends Thread{
+    private $form;
+    public function __construct(){
+        //$this->form=&$Form;
+    }
+    public function run(){
+        //$this->form->UpdateMoney();
+    }
+        
 }
+
+

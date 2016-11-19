@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<project author="diman-pro" authorOS="Linux" createdAt="1479448961769" ideName="DevelNext" ideVersion="16 rc-1" ideVersionHash="2016092012" name="GetMoney" template="ide\project\templates\DefaultGuiProjectTemplate" updatedAt="1479565712687">
+<project author="diman-pro" authorOS="Linux" createdAt="1479448961769" ideName="DevelNext" ideVersion="16 rc-1" ideVersionHash="2016092012" name="GetMoney" template="ide\project\templates\DefaultGuiProjectTemplate" updatedAt="1479568887181">
   <openedFiles>
   <file src="~project"/>
     <file src="src/.scripts/MainModule"/>
@@ -112,11 +112,6 @@
     <file inRootDir="1" src="src/app/modules/MainModule.json"/>
     <file inRootDir="1" src="src/.scripts/MainModule/database.json"/>
     <file inRootDir="1" src="GetMoney.dnproject"/>
-    <file inRootDir="1" src="lib"/>
-    <file inRootDir="1" src="src"/>
-    <file inRootDir="1" src="build"/>
-    <file inRootDir="1" src="~project"/>
-    <file inRootDir="1" src="src_generated"/>
     <file inRootDir="1" src="src/.game/sprites/test.sprite"/>
     <file inRootDir="1" src="src/.game/sprites/test.png"/>
     <file inRootDir="1" src="src/.forms/Load.fxml">
@@ -127,6 +122,14 @@
     </file>
     <file inRootDir="1" src="src/app/forms/Load.php"/>
     <file inRootDir="1" src="src/.forms/Load.conf"/>
+    <file inRootDir="1" src="src/.game"/>
+    <file inRootDir="1" src="src/app/forms/Load.php.axml"/>
+    <file inRootDir="1" src="src/app/forms/Load.behaviour"/>
+    <file inRootDir="1" src="lib"/>
+    <file inRootDir="1" src="src"/>
+    <file inRootDir="1" src="build"/>
+    <file inRootDir="1" src="~project"/>
+    <file inRootDir="1" src="src_generated"/>
   </files>
   <behaviours>
   <behaviour class="ide\project\behaviours\BundleProjectBehaviour"/>
